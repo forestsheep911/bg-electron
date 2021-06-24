@@ -41,6 +41,7 @@ const output = resolve(__dirname, '../dist')
 module.exports = {
   entry: {
     app: resolve(source, 'index.js'),
+    preload: resolve(source, 'preload.js'),
   },
   output: {
     filename: `[name]${isDev ? '' : ''}.js`,
